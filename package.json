@@ -1,0 +1,24 @@
+{
+  "name": "homey",
+  "version": "1.0.0",
+  "description": "Web application that provides easy access to real estate listings",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briajnae/Homey.git"
+  },
+  "author": "Bria Walker, Jenna Conway, Samidh Desai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/briajnae/Homey/issues"
+  },
+  "homepage": "https://github.com/briajnae/Homey#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
