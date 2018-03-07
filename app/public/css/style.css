@@ -11,7 +11,9 @@ body{
 
 #index{
     border-radius: 0;
-    height: 300px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -29,6 +31,7 @@ body{
     height: 300px;
     width: 45%; 
     float: left; 
+    position: absolute;
 }
 
 
