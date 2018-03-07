@@ -1,60 +1,276 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homey | An Easier Way to Real Estate</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Homey | An Friendlier Way to Real Estate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
 </head>
-<body>
+
+<body id="index-body">
     <div class="container-fluid">
         <div class="row">
-            <div id="index" class="jumbotron">
-                    <div class="  col-xs-12 col-sm-12 col-md-6 col-md-offset-3" id="logo">
-                            <img src="images/homey_logo.png" alt="">
-                        </div>
+            <div id="index" class="jumbotron" >
+                <div class="  col-xs-12 col-sm-12 col-md-6 col-md-offset-3" id="logo">
+                    <img src="images/homey_logo.png" alt="">
+                </div>
 
             </div>
-                 
-                        <section id="user-login-div">
-                                <h2>Log-in</h2>
-                                <form action="">
-                                    <label for="name">Name</label>
-                                    <input type="text" name="" id="name">
 
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email">
+            <section id="user-login-div">
+                <h2>Log-in</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="" id="name">
 
-                                    <button> Submit</button>
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
 
-                                    <br>
+                    <button> Submit</button>
+                </form>
 
-                                    <button>Use as a Guest</button>
-                                </form>
-                            </section>
-                  
-                           
 
-                            <section id="guest-login-div">
-                                    <h2>How it works:</h2>
-                                <div>
-                                    <h4>A</h4>
-                                </div>
+                <br>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                    Sign Up
+                </button>
 
-                                <div>
-                                    <h4>B</h4>
-                                </div>
+                <a href="home.html">
+                    <button>Use as Guest</button>
+                </a>
+            </section>
 
-                                <div>
-                                    <h4>C</h4>
-                                </div>
-                                </section>
-  
+
+
+            <section id="guest-login-div">
+                <h2>How it works:</h2>
+                <div>
+                    <h4>A</h4>
+                </div>
+
+                <div>
+                    <h4>B</h4>
+                </div>
+
+                <div>
+                    <h4>C</h4>
+                </div>
+            </section>
+
         </div>
-        
-        
-   
-        
+        <!-- Sign-Up Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Sign-Up</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+
+                            <label for="name">Name</label>
+                            <input type="text" name="" id="name">
+
+                            <label for="email">Email</label>
+                            <input type="text" id="email">
+
+                        </form>
+
+                        <h4>Are you interested in renting or buying?</h4>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rentModal"> Rent </button>
+                        <Button> Buy </Button>
+                        <a href="home.html">
+                            <button> Not sure</button>
+                        </a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Rent Modal -->
+        <div class="modal fade" id="rentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel">Rent</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Location </h4>
+                        <form action="">
+
+                            <label for="email">City</label>
+                            <input type="text" id="email">
+
+                            <label for="email">State</label>
+                            <input type="text" id="email">
+
+                        </form>
+
+                        <h4>Type</h4>
+                        <form action="">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="name">Apartment</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Condo</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">House</label>
+                        </form>
+
+                        <h4>Features</h4>
+
+                        <h5>Price</h5>
+                        <label for=""> min</label>
+
+                        <label for=""> max</label>
+
+
+                        <label for="name">min</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <label for="name">max</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <h5>Bedrooms</h5>
+
+                        <label for="name">min</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <label for="name">max</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <h5>Bathrooms</h5>
+
+                        <label for="name">min</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <label for="name">max</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+
+                        <h5>Amenities</h5>
+
+                        <form action="">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="name">Laundry Room</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Hardwood Floor</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Pets Allowed</label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="name">Finess Center</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Storage</label>
+                            </div>
+
+
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Parking</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="name">Balcony</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Laundry (In Unit)</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Laundry Room</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Central Cooling</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Water Included</label>
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">Heat Included</label>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+
+    </script>
 </body>

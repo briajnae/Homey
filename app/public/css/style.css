@@ -1,4 +1,9 @@
-body{
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+#index-body{
     background: linear-gradient(100deg, #2E383F, #07617D);
     background-position: center center;
     -webkit-background-size: cover;
@@ -9,13 +14,29 @@ body{
     height: 100vh;
 }
 
+
+
 #index{
+    
+    background-image: url("../images/christopher-harris-55545-unsplash.jpg");
+    background-repeat: none;
+    background-size: cover;
     border-radius: 0;
     height: 500px;
     margin: 0;
     padding: 0;
-
 }
+
+/* #index:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.5) 100%);
+} */
 
 #logo{
     position: absolute;
@@ -40,4 +61,40 @@ body{
     height: 300px;
     width: 45%; 
     float: right; 
+}
+
+/* END OF INDEX PAGE */
+
+#home-body{
+    background: #ECECEB;
+}
+
+#header-logo {
+    width: 8%;
+}
+
+#header{
+    height: 70px;
+    background: linear-gradient(100deg, #2E383F, #07617D);
+}
+
+#home-jumbotron {
+    border-radius: 0;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    background: #07617D;
+}
+
+#listingCard {
+    background-color: #07617D;
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+}
+
+#results-img{
+    background-color: #ECECEB;
+    height: 150px;
+    margin: 10px;
 }
