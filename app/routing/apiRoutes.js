@@ -3,8 +3,8 @@
 // *********************************************************************************
 
 // Dependencies
-var js = require("../data/homey.js");
-var nodeZillow = require("../routing/javascript.js");
+var db = require("../models");
+// var nodeZillow = require("../routing/javascript.js");
 
 // Routes
 module.exports = function(app) {
