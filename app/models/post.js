@@ -7,14 +7,11 @@ module.exports = function(sequelize, DataTypes) {
           len: [1]
         }
       },
-      community_area_number: {
-        type: DataTypes.TEXT,
-        allowNull: false,
-        validate: {
-          len: [1]
-        }
-      },
       property_type: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      property_name: {
         type: DataTypes.STRING,
         allowNull: false
       },
