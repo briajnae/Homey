@@ -12,4 +12,8 @@ module.exports = function(app) {
     app.post("/all", function(req, res) {
         
     });
+
+    app.get('./server.js', function (req, res) {
+        res.send('GET request to the homepage')
+      })
 };

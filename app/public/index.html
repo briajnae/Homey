@@ -21,9 +21,151 @@
 <body id="index-body">
     <div class="container-fluid">
         <div class="row">
-            <div id="index" class="jumbotron" >
+            <div id="index" class="jumbotron">
                 <div class="  col-xs-12 col-sm-12 col-md-6 col-md-offset-3" id="logo">
                     <img src="images/homey_logo.png" alt="">
+                </div>
+                <div id="location-menu">
+                    <h4>Location</h4>
+                    <form action="">
+                        <label for="name">Neighborhood</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Albany Park</option>
+                            <option>Ashburn</option>
+                            <option>Auburn Gresham</option>
+                            <option>Austin</option>
+                            <option>Avalon Park</option>
+                            <option>Belmont Cragin</option>
+                            <option>Bridgeport</option>
+                            <option>Chatham</option>
+                            <option>Chicago Lawn</option>
+                            <option>Douglas</option>
+                            <option>Dunning</option>
+                            <option>East Garfield Park</option>
+                            <option>Edgewater</option>
+                            <option>Englewood</option>
+                            <option>Fuller Park</option>
+                            <option>Gage Park</option>
+                            <option>Garfield Park</option>
+                            <option>Grand Boulevard</option>
+                            <option>Greater Grand Crossing</option>
+                            <option>Hegewisch</option>
+                            <option>Humboldt Park</option>
+                            <option>Hyde Park</option>
+                            <option>Jefferson Park</option>
+                            <option>Kenwood</option>
+                            <option>Lakeview</option>
+                            <option>Logan Square</option>
+                            <option>Loop</option>
+                            <option>Lower West Side</option>
+                            <option>Montclare</option>
+                            <option>Near North Side</option>
+                            <option>Near West Side</option>
+                            <option>New City</option>
+                            <option>North Center</option>
+                            <option>Noth Lawndale</option>
+                            <option>North Park</option>
+                            <option>Norwood Park</option>
+                            <option>Oakland</option>
+                            <option>Pullman</option>
+                            <option>Riverdale</option>
+                            <option>Rogers Park</option>
+                            <option>Roseland</option>
+                            <option>South Chicago</option>
+                            <option>South Lawndale</option>
+                            <option>South Shore</option>
+                            <option>Uptown</option>
+                            <option>Washington Heights</option>
+                            <option>Washington Park</option>
+                            <option>West Englewood</option>
+                            <option>West Garfield Park</option>
+                            <option>West Lawn</option>
+                            <option>West Pullman</option>
+                            <option>West Ridge</option>
+                            <option>West Town</option>
+                            <option>Woodlawn</option>
+                        </select>
+
+                    </form>
+
+                </div>
+
+                <div id="type-list">
+                        <label for="name">Property Type</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>ARO</option>
+                            <option>Artist Housing</option>
+                            <option>Artist Live/Work Space</option>
+                            <option>Inter Generational</option>
+                            <option>Multifamily</option>
+                            <option>Multifamily/Artists</option>
+                            <option>People with Disabilities</option>
+                            <option>Senior</option>
+                            <option>Senior HUD 202</option>
+                            <option>Senior LGBTQ</option>
+                            <option>Seniors</option>
+                            <option>Supportive</option>
+                            <option>Supportive Housing</option>
+                            <option>Supportive/HIV/AIDS</option>
+                            <option>Supportive/Kinship Families</option>
+                            <option>Supportive/Males 18-24 yrs</option>
+                            <option>Supportive/Teenage Moms</option>
+                            <option>Supportive/Veterans</option>
+                            <option>Supportive/Youth/Kinship Families</option>
+                        </select>     
+
+                </div>
+
+                <div id="zipcode-list">
+                        <label for="name">Zip Code</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>60601</option>
+                            <option>60605</option>
+                            <option>60607</option>
+                            <option>60608</option>
+                            <option>60609</option>
+                            <option>60610</option>
+                            <option>60612</option>
+                            <option>60613</option>
+                            <option>60614</option>
+                            <option>60615</option>
+                            <option>60616</option>
+                            <option>60617</option>
+                            <option>60618</option>
+                            <option>60619</option>
+                            <option>60620</option>
+                            <option>60621</option>
+                            <option>60622</option>
+                            <option>60623</option>
+                            <option>60624</option>
+                            <option>60625</option>
+                            <option>60626</option>
+                            <option>60627</option>
+                            <option>60628</option>
+                            <option>60629</option>
+                            <option>60630</option>
+                            <option>60631</option>
+                            <option>60633</option>
+                            <option>60634</option>
+                            <option>60636</option>
+                            <option>60637</option>
+                            <option>60638</option>
+                            <option>60639</option>
+                            <option>60640</option>
+                            <option>60642</option>
+                            <option>60643</option>
+                            <option>60644</option>
+                            <option>60646</option>
+                            <option>60647</option>
+                            <option>60649</option>
+                            <option>60651</option>
+                            <option>60652</option>
+                            <option>60653</option>
+                            <option>60657</option>
+                            <option>60659</option>
+                            <option>60660</option>
+                            <option>60707</option>
+                        </select>
                 </div>
 
             </div>
@@ -39,7 +181,6 @@
 
                     <button> Submit</button>
                 </form>
-
 
                 <br>
                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -69,6 +210,7 @@
             </section>
 
         </div>
+
         <!-- Sign-Up Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
@@ -77,7 +219,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Sign-Up</h4>
+                        <!-- <h4 class="modal-title" id="myModalLabel">Sign-Up</h4>
                     </div>
                     <div class="modal-body">
                         <form action="">
@@ -88,7 +230,7 @@
                             <label for="email">Email</label>
                             <input type="text" id="email">
 
-                        </form>
+                        </form> -->
 
                         <h4>Are you interested in renting or buying?</h4>
                         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rentModal"> Rent </button>
@@ -116,149 +258,12 @@
                         <h4 class="modal-title" id="myModalLabel">Rent</h4>
                     </div>
                     <div class="modal-body">
-                        <h4>Location </h4>
-                        <form action="">
 
-                            <label for="email">City</label>
-                            <input type="text" id="email">
+                       
 
-                            <label for="email">State</label>
-                            <input type="text" id="email">
-
-                        </form>
-
-                        <h4>Type</h4>
-                        <form action="">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="name">Apartment</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Condo</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">House</label>
-                        </form>
-
-                        <h4>Features</h4>
-
-                        <h5>Price</h5>
-                        <label for=""> min</label>
-
-                        <label for=""> max</label>
-
-
-                        <label for="name">min</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <label for="name">max</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <h5>Bedrooms</h5>
-
-                        <label for="name">min</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <label for="name">max</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <h5>Bathrooms</h5>
-
-                        <label for="name">min</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <label for="name">max</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <h5>Amenities</h5>
-
-                        <form action="">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="name">Laundry Room</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Hardwood Floor</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Pets Allowed</label>
-                            </div>
-
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="name">Finess Center</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Storage</label>
-                            </div>
-
-
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Parking</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="name">Balcony</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Laundry (In Unit)</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Laundry Room</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Central Cooling</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Water Included</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Heat Included</label>
-                        </form>
-
-
+                       
+                   
+                   
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -267,174 +272,17 @@
                 </div>
             </div>
         </div>
-
-
-         <!-- Buy Modal -->
-         <div class="modal fade" id="buyModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Rent</h4>
-                    </div>
-                    <div class="modal-body">
-                        <h4>Location </h4>
-                        <form action="">
-
-                            <label for="email">City</label>
-                            <input type="text" id="email">
-
-                            <label for="email">State</label>
-                            <input type="text" id="email">
-
-                        </form>
-
-                        <h4>Type</h4>
-                        <form action="">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="name">Apartment</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Condo</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">House</label>
-                        </form>
-
-                        <h4>Features</h4>
-
-                        <h5>Price</h5>
-                        <label for=""> min</label>
-
-                        <label for=""> max</label>
-
-
-                        <label for="name">min</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <label for="name">max</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <h5>Bedrooms</h5>
-
-                        <label for="name">min</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <label for="name">max</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <h5>Bathrooms</h5>
-
-                        <label for="name">min</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <label for="name">max</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-
-                        <h5>Amenities</h5>
-
-                        <form action="">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="name">Laundry Room</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Hardwood Floor</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Pets Allowed</label>
-                            </div>
-
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="name">Finess Center</label>
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Storage</label>
-                            </div>
-
-
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Parking</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="name">Balcony</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Laundry (In Unit)</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Laundry Room</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Central Cooling</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Water Included</label>
-
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label for="email">Heat Included</label>
-                        </form>
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
+    </div>
+    </div>
+    </div>
 
-   
-   
-   
+
+
+
     </div>
     <script>
 
