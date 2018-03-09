@@ -25,7 +25,7 @@
                 <div class="  col-xs-12 col-sm-12 col-md-6 col-md-offset-3" id="logo">
                     <img src="images/homey_logo.png" alt="">
                 </div>
-                <div id="location-menu">
+                <div id="location-list" class="col-md-4 col-lg-3">
                     <h4>Location</h4>
                     <form action="">
                         <label for="name">Neighborhood</label>
@@ -90,201 +90,109 @@
 
                 </div>
 
-                <div id="type-list">
-                        <label for="name">Property Type</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>ARO</option>
-                            <option>Artist Housing</option>
-                            <option>Artist Live/Work Space</option>
-                            <option>Inter Generational</option>
-                            <option>Multifamily</option>
-                            <option>Multifamily/Artists</option>
-                            <option>People with Disabilities</option>
-                            <option>Senior</option>
-                            <option>Senior HUD 202</option>
-                            <option>Senior LGBTQ</option>
-                            <option>Seniors</option>
-                            <option>Supportive</option>
-                            <option>Supportive Housing</option>
-                            <option>Supportive/HIV/AIDS</option>
-                            <option>Supportive/Kinship Families</option>
-                            <option>Supportive/Males 18-24 yrs</option>
-                            <option>Supportive/Teenage Moms</option>
-                            <option>Supportive/Veterans</option>
-                            <option>Supportive/Youth/Kinship Families</option>
-                        </select>     
+                <div id="type-list" class="col-md-4 col-lg-3">
+                    <label for="name">Property Type</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>ARO</option>
+                        <option>Artist Housing</option>
+                        <option>Artist Live/Work Space</option>
+                        <option>Inter Generational</option>
+                        <option>Multifamily</option>
+                        <option>Multifamily/Artists</option>
+                        <option>People with Disabilities</option>
+                        <option>Senior</option>
+                        <option>Senior HUD 202</option>
+                        <option>Senior LGBTQ</option>
+                        <option>Seniors</option>
+                        <option>Supportive</option>
+                        <option>Supportive Housing</option>
+                        <option>Supportive/HIV/AIDS</option>
+                        <option>Supportive/Kinship Families</option>
+                        <option>Supportive/Males 18-24 yrs</option>
+                        <option>Supportive/Teenage Moms</option>
+                        <option>Supportive/Veterans</option>
+                        <option>Supportive/Youth/Kinship Families</option>
+                    </select>
 
                 </div>
 
-                <div id="zipcode-list">
-                        <label for="name">Zip Code</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>60601</option>
-                            <option>60605</option>
-                            <option>60607</option>
-                            <option>60608</option>
-                            <option>60609</option>
-                            <option>60610</option>
-                            <option>60612</option>
-                            <option>60613</option>
-                            <option>60614</option>
-                            <option>60615</option>
-                            <option>60616</option>
-                            <option>60617</option>
-                            <option>60618</option>
-                            <option>60619</option>
-                            <option>60620</option>
-                            <option>60621</option>
-                            <option>60622</option>
-                            <option>60623</option>
-                            <option>60624</option>
-                            <option>60625</option>
-                            <option>60626</option>
-                            <option>60627</option>
-                            <option>60628</option>
-                            <option>60629</option>
-                            <option>60630</option>
-                            <option>60631</option>
-                            <option>60633</option>
-                            <option>60634</option>
-                            <option>60636</option>
-                            <option>60637</option>
-                            <option>60638</option>
-                            <option>60639</option>
-                            <option>60640</option>
-                            <option>60642</option>
-                            <option>60643</option>
-                            <option>60644</option>
-                            <option>60646</option>
-                            <option>60647</option>
-                            <option>60649</option>
-                            <option>60651</option>
-                            <option>60652</option>
-                            <option>60653</option>
-                            <option>60657</option>
-                            <option>60659</option>
-                            <option>60660</option>
-                            <option>60707</option>
-                        </select>
+                <div id="zipcode-list" class="col-md-4 col-lg-3">
+                    <label for="name">Zip Code</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>60601</option>
+                        <option>60605</option>
+                        <option>60607</option>
+                        <option>60608</option>
+                        <option>60609</option>
+                        <option>60610</option>
+                        <option>60612</option>
+                        <option>60613</option>
+                        <option>60614</option>
+                        <option>60615</option>
+                        <option>60616</option>
+                        <option>60617</option>
+                        <option>60618</option>
+                        <option>60619</option>
+                        <option>60620</option>
+                        <option>60621</option>
+                        <option>60622</option>
+                        <option>60623</option>
+                        <option>60624</option>
+                        <option>60625</option>
+                        <option>60626</option>
+                        <option>60627</option>
+                        <option>60628</option>
+                        <option>60629</option>
+                        <option>60630</option>
+                        <option>60631</option>
+                        <option>60633</option>
+                        <option>60634</option>
+                        <option>60636</option>
+                        <option>60637</option>
+                        <option>60638</option>
+                        <option>60639</option>
+                        <option>60640</option>
+                        <option>60642</option>
+                        <option>60643</option>
+                        <option>60644</option>
+                        <option>60646</option>
+                        <option>60647</option>
+                        <option>60649</option>
+                        <option>60651</option>
+                        <option>60652</option>
+                        <option>60653</option>
+                        <option>60657</option>
+                        <option>60659</option>
+                        <option>60660</option>
+                        <option>60707</option>
+                    </select>
                 </div>
 
-            </div>
-
-            <section id="user-login-div">
-                <h2>Log-in</h2>
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="" id="name">
-
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
-
-                    <button> Submit</button>
-                </form>
-
-                <br>
-                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                    Sign Up
-                </button>
-
-                <a href="home.html">
-                    <button>Use as Guest</button>
-                </a>
-            </section>
-
-
-
-            <section id="guest-login-div">
-                <h2>How it works:</h2>
-                <div>
-                    <h4>A</h4>
-                </div>
-
-                <div>
-                    <h4>B</h4>
-                </div>
-
-                <div>
-                    <h4>C</h4>
-                </div>
-            </section>
-
-        </div>
-
-        <!-- Sign-Up Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <!-- <h4 class="modal-title" id="myModalLabel">Sign-Up</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form action="">
-
-                            <label for="name">Name</label>
-                            <input type="text" name="" id="name">
-
-                            <label for="email">Email</label>
-                            <input type="text" id="email">
-
-                        </form> -->
-
-                        <h4>Are you interested in renting or buying?</h4>
-                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rentModal"> Rent </button>
-                        <Button> Buy </Button>
-                        <a href="home.html">
-                            <button> Not sure</button>
-                        </a>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    </div>
+                <div id="submit-index">
+                    <button>Submit</button>
                 </div>
             </div>
-        </div>
-
-
-        <!-- Rent Modal -->
-        <div class="modal fade" id="rentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">Rent</h4>
+            <div>
+                <section class="container-fluid" id="guest-login-div">
+                    <h2>How it works:</h2>
+                    <div>
+                        <h4>A</h4>
                     </div>
-                    <div class="modal-body">
 
-                       
+                    <div>
+                        <h4>B</h4>
+                    </div>
 
-                       
-                   
-                   
+                    <div>
+                        <h4>C</h4>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
+                </section>
             </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
         </div>
     </div>
     </div>
     </div>
-
-
-
-
     </div>
     <script>
-
     </script>
 </body>

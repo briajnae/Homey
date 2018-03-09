@@ -63,6 +63,18 @@
     float: right; 
 }
 
+#location-list{
+    position: absolute;
+}
+
+#type-list{
+    position: relative;
+}
+
+#zipcode-list{
+    position: relative;
+}
+
 /* END OF INDEX PAGE */
 
 #home-body{
