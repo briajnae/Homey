@@ -25,4 +25,8 @@ module.exports = function(app) {
           res.json(data);
         });
     });
+
+    app.get('./server.js', function (req, res) {
+        res.send('GET request to the homepage')
+      })
 };
