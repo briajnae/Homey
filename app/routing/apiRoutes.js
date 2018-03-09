@@ -3,13 +3,26 @@
 // *********************************************************************************
 
 // Dependencies
-var db = require("./models");
-// var nodeZillow = require("../routing/javascript.js");
+var db = require("../models");
+console.log("db.Affordable_housings =",db.Affordable_housing);
 
-// Routes
 module.exports = function(app) {
 
-    app.post("/all", function(req, res) {
-        
+    app.get("/api", function(req, res) {
+      // console.log("connected")
+        db.Affordable_housing.findAll({})
+        .then(function(data){
+          res.json(data);
+        })
+    });
+
+    app.get("/home.html", function(req, res) {
+         db.Affordable_housing.findOne({
+          where: {
+            Senior: req.params.Senior 
+          }
+        }).then(function(dbAffordable_housing) {
+          res.json(data);
+        });
     });
 };
