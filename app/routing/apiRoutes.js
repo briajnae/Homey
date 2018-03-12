@@ -23,15 +23,15 @@ module.exports = function(app) {
         })
     });
 
-    app.get("/home.html", function(req, res) {
-         db.Affordable_housing.findOne({
-          where: {
-            Senior: req.params.Senior 
-          }
-        }).then(function(dbAffordable_housing) {
-          res.json(data);
-        });
-    });
+    // app.get("/home.html", function(req, res) {
+    //      db.Affordable_housing.findOne({
+    //       where: {
+    //         Senior: req.params.Senior 
+    //       }
+    //     }).then(function(dbAffordable_housing) {
+    //       res.json(data);
+    //     });
+    // });
   });
 };
 
