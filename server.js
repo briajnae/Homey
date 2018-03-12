@@ -4,14 +4,16 @@ var db = require("./app/models");
 
 var app = express();
 
-var PORT = process.env.PORT || 8090;
+
+var PORT = process.env.PORT || 3060;
+
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(express.static("app/public"));
 
-// require("./routes/apiRoutes")(app);
+require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
 
