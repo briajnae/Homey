@@ -5,7 +5,6 @@ $(document).ready(function(){
     
     // window.location.href ='/home.html';
     var data_object = { 
-      zip_code: $("#zipcode").val().trim(),
       property_type: $("#propertyType").val(),
       community_area_name: $("#neighborhood").val()
     }
@@ -42,8 +41,10 @@ $(document).ready(function(){
         }
 
       });
+
     }; 
                    
+
   });
 
      

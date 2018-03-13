@@ -34,38 +34,35 @@
     justify-content: center;
     align-items: center;
 }
-#user-login-div{
-    background: white;
-    height: 300px;
-    width: 45%; 
-    float: left; 
-    position: absolute;
-}
-#dropdown-menus{
-padding: 400px;
-}
-#neighborhood-list{
-    position: relative;
-  
-}
-#index-info{
+
+#tag{
     color: white;
-    height: 100px;
+    position: absolute;
+    text-align: center;
+    margin-left:350px;
+    margin-top: 25%;
+    padding: 0;
+}
+
+#index-info{
+    margin: 0;
+    color: white;
+    height: 350px;
     border-radius: 0;
     background:linear-gradient( to bottom right,
     #f9a828, 
     #182848
       );
 }
-#type-list{
-    position: relative;
+#submit-index{
+    color: white;
+    background: #07617D;
+   
 }
-#zipcode-list{
-    position: relative;
-}
+
 #submit-index-div{
     position: relative;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 #index-label{
   color: white;
@@ -157,7 +154,7 @@ label{
     margin-left: 10px;
 }
 
-#map{
+
     height: 480px;
     width: 640px;
 }
