@@ -11,6 +11,12 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <script   src="http://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.2/velocity.ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.2/velocity.min.js"></script>
+
+
 </head>
 
 <body id="home-body">
@@ -22,6 +28,8 @@
         <div id="home-jumbotron" class="jumbotron">
             <h1>Hello "NAME" !</h1>
             <h4>Here are your search results for "LOCATION.</h4>
+
+           <div id="total"></div>
         </div>
 
         <div class="row">
@@ -34,203 +42,197 @@
                         <h5>Neighborhoods</h5>
                     </div>
                     <div id="neighborhood-form">
-                        <form action="">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <form action="" id="home-form">
+                            <input type="checkbox" class="form-check-input" value="Albany Park" id="neighborhood" data-toggle="checkbox">
                             <label for="email">Albany Park</label>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Ashburn" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Ashburn</label>
                             </div>
 
                             <div class="form-check">
 
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Auburn Gresham" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Auburn Gresham</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Austin" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Austin</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Avalon Park" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Avalon Park</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label for="email">Avalon Park</label>
-
-                            </div>
-
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Belmont Cragin" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Belmont Cragin</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Bridgeport" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Bridgeport</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Chatham" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Chatham</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Chicago Lawn" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Chicago Lawn</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Douglas" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Douglas</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Dunning" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Dunning</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="East Garfield Park" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">East Garfield Park</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Edgewater" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Edgewater</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Englewood" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Englewood</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Fuller Park" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Fuller Park</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Gage Park" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Gage Park</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Garfield" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Garfield</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Englewood" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Grand Blvd</label>
 
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" value="Englewood" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Greater Grand Crossing</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Hegewisch</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Humbolt Park</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Hyde Park</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Jefferson Park</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Kenwood</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Lakeview</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Logan Square</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Loop</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Lower West Side</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Montclare</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Near Westside</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">New City</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">North Center</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">North Lawndale</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">North Park</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Norwood Park</label>
                             </div>
 
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="neighborhood" data-toggle="checkbox">
                                 <label for="email">Oakland</label>
                             </div>
 
@@ -301,20 +303,399 @@
                             </div>
 
                             <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label for="email">West Ridge</label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">West Ridge</label>
                             </div>
 
                             <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label for="email">West Town</label>
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">West Town</label>
                             </div>
 
                             <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label for="email">Woodlawn</label>
-                            </div>                           
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Woodlawn</label>
+                            </div>
                         </form>
+                        <div id="submit-index-div">
+                            <button id="home-submit" value="submit">Submit</button>
+                        </div>
+                    </div>
+
+
+                    <!-- TYPE FORM ======================================================================= -->
+
+                    <div id="type-list">
+                        <h5>Property Type</h5>
+                    </div>
+                    <div id="type-form">
+                        <form action="" id="typeform">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">ARO</label>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Artist Housing</label>
+                            </div>
+
+                            <div class="form-check">
+
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Artist Live/Work Space</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Inter Generational</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Multifamily</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Multifamily (Artists)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">People with Disabilities</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Senior</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Senior (HUD 202)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Senior (LGBTQ)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Seniors</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive Housing</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive (HIV/AIDS)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive (Kinship Families)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive (Males 18-24 yrs)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive (Teenage Moms)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive (Veterans)</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">Supportive (Youth/Kinship Families)</label>
+
+                            </div>
+                        </form>
+                        <div id="submit-index-div">
+                            <button id="" value="submit">Submit</button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- ZIP CODE FORM ======================================================================= -->
+
+                    <div id="zipcode-list">
+                        <h5>Zip Codes</h5>
+                    </div>
+                    <div id="zipcode-form">
+                        <form action="" id="zip-form">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label for="email">60605</label>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60607</label>
+                            </div>
+
+                            <div class="form-check">
+
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60608</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60609</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60610</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60612</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60613</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60614</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60615</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60616</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60617</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60618</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60619</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60620</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60621</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60622</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60623</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60624</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60625</label>
+
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60626</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60627</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60628</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60629</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60630</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60631</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60633</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60634</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60636</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60637</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60638</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60639</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60640</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60642</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60643</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60644</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60646</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60647</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60649</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60651</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60652</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60653</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60657</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60659</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60660</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label for="email">60707</label>
+                            </div>
+
+                        </form>
+                        <div id="submit-index-div">
+                            <button id="" value="submit">Submit</button>
+                        </div>
                     </div>
 
 
@@ -325,18 +706,18 @@
 
 
 
-            <!-- <div id="listingCard" class="col-md-3">
-                          <div id="results-img">
-                              <img src="" alt="">
-                          </div>
-                          <div>
-                              <h5 id="results-location">LOCATION</h5>
-                          </div>
+            <div id="listingCard" class="col-md-offest-3 col-lg-offest-3 col-md-9 col-lg-9">
+                <div id="results-img">
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <h5 id="results-location">LOCATION</h5>
+                </div>
 
-                          <div>
-                              <h6 id="results-price">Pricing</h6>
-                          </div>
-                      </div> -->
+                <div>
+                    <h6 id="results-price">Pricing</h6>
+                </div>
+            </div>
 
 
 
@@ -349,21 +730,53 @@
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
+
     <script>
-             $(document).ready(function () {
-                $("#neighborhood-list").mouseenter(function () {
-                    $("#neighborhood-form").slideDown("slow");
-                });
-                
-                $("#neighborhood-form").mouseleave(function () {
-                    $("#neighborhood-form").hide();
-                });
-    
+        $(document).ready(function () {
+
+            $("#neighborhood-list").mouseenter(function () {
+                $("#neighborhood-form").slideDown("slow");
             });
-        </script>
-        
+
+            $("#home-submit").click(function(){
+                $("#neighborhood-form").hide();
+                var html="<p>"+$('input:checkbox:checked').val()+"</p>";
+                    $("#total").prepend(html);   
+             });
+
+
+            // $("#home-submit").on("click", function () {
+            //     
+            //     $("#total").append(innerHTML("#neighborhood:checked"));
+            // });
+
+            $("#home-form").velocity("scroll", { container: $("#neighborhood-form") });
+
+
+            $("#type-list").mouseenter(function () {
+                $("#type-form").slideDown("slow");
+            });
+
+            $("#type-form").mouseleave(function () {
+                $("#type-form").hide();
+            });
+
+            $("#typeform").velocity("scroll", { container: $("#type-form") });
+
+            $("#zipcode-list").mouseenter(function () {
+                $("#zipcode-form").slideDown("slow");
+            });
+
+            $("#zipcode-form").mouseleave(function () {
+                $("#zipcode-form").hide();
+            });
+
+            $("#zip-form").velocity("scroll", { container: $("#zipcode-form") });
+
+        });
+    </script>
+
 </body>
 
 </html>
