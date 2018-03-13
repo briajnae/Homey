@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 #index-body{
     background: linear-gradient(100deg, #2E383F, #07617D);
     background-position: center center;
@@ -13,9 +12,6 @@
     background-repeat: no-repeat, repeat;
     height: 100vh;
 }
-
-
-
 #index{
     background: linear-gradient(
         rgba(44, 43, 43, 0.75), 
@@ -30,9 +26,6 @@
     margin: 0;
     padding: 0; 
 }
-
-
-
 #logo{
     position: absolute;
     top:10%;
@@ -41,7 +34,6 @@
     justify-content: center;
     align-items: center;
 }
-
 #user-login-div{
     background: white;
     height: 300px;
@@ -49,17 +41,13 @@
     float: left; 
     position: absolute;
 }
-
-
 #dropdown-menus{
-
 padding: 400px;
 }
 #neighborhood-list{
     position: relative;
   
 }
-
 #index-info{
     color: white;
     height: 100px;
@@ -69,38 +57,30 @@ padding: 400px;
     #182848
       );
 }
-
 #type-list{
     position: relative;
 }
-
 #zipcode-list{
     position: relative;
 }
-
 #submit-index-div{
     position: relative;
     margin-top: 30px;
 }
-
 #index-label{
   color: white;
 }
 /* END OF INDEX PAGE */==========================================
-
 #home-body{
     background: #ECECEB;
 }
-
 #header-logo {
     width: 8%;
 }
-
 #header{
     height: 70px;
     background: linear-gradient(100deg, #2E383F, #07617D);
 }
-
 #home-jumbotron {
     border-radius: 0;
     height: 200px;
@@ -108,21 +88,66 @@ padding: 400px;
     padding: 0;
     background: #07617D;
 }
-
+aside{
+    background: #f9a828;
+    height: 100%;
+}
 #listingCard {
     background-color: #07617D;
     height: 250px;
     width: 250px;
     margin: 5px;
 }
-
 #results-img{
     background-color: #ECECEB;
     height: 150px;
     margin: 10px;
 }
-
 #neighborhood-form{
+    border: 2px solid white;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Remember that a scrolling container element must have a position set. */
+  position: relative;
+  width: 60%;
     display: none;
 }
-
+#type-form{
+    border: 2px solid white;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Remember that a scrolling container element must have a position set. */
+  position: relative;
+  width: 70%;
+    display: none;
+    margin: 0;
+}
+#zipcode-form{
+    border: 2px solid white;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Remember that a scrolling container element must have a position set. */
+  position: relative;
+  width: 50%;
+    display: none;
+}
+label{
+    font-size: 12px;
+}
+.aside-title{
+    color: white;
+    text-align: center;
+    
+}
+.neighborhood:hover{
+    color: white;
+    background: #2E383F;
+    width: 80%;
+}
+.form-check{
+    margin-top: 5px;
+    margin-left: 10px;
+}
