@@ -3,7 +3,6 @@ $(document).ready(function(){
   $("#submit-index").on("click", function(e){
     e.preventDefault();
     var data_object = { 
-      zip_code: $("#zipcode").val().trim(),
       property_type: $("#propertyType").val(),
       community_area_name: $("#neighborhood").val()
     }
@@ -25,7 +24,7 @@ $(document).ready(function(){
       }).then(function(data){
         console.log("retried data", data)
       });
-    };                      
+    };  
   });
 
      
