@@ -5,7 +5,7 @@
 // Dependencies
 "use strict";
 
-var db = require("./app/models");
+var db = require("../models");
 
 console.log("db.Affordable_housings =",db.Affordable_housing);
 
@@ -16,7 +16,7 @@ module.exports = function(app) {
         db.Affordable_housing.findAll({}).then(function(dbAffordable_housing) {
          res.json(dbAffordable_housing);
       });
-
+    });
     app.get("/api", function(req, res) {
       console.log("connected");
         db.Affordable_housing.findAll({})
@@ -45,5 +45,5 @@ module.exports = function(app) {
      
    });
  });
-});
+
 }
