@@ -128,7 +128,7 @@ aside{
 }
 
 #neighborhood-form{
-    border: 1px solid gray;
+    border: 2px solid white;
   height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -139,7 +139,7 @@ aside{
 }
 
 #type-form{
-    border: 1px solid gray;
+    border: 2px solid white;
   height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -151,7 +151,7 @@ aside{
 }
 
 #zipcode-form{
-    border: 1px solid gray;
+    border: 2px solid white;
   height: 200px;
   overflow-x: hidden;
   overflow-y: auto;
@@ -165,3 +165,12 @@ label{
     font-size: 12px;
 }
 
+.aside-title{
+    color: white;
+    text-align: center;
+    
+}
+
+.form-check{
+    margin-left: 20px;
+}

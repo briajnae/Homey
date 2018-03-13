@@ -24,15 +24,26 @@ module.exports = function(app) {
           res.json(data);
         })
     });
-
-    // app.get("/home.html", function(req, res) {
-    //      db.Affordable_housing.findOne({
-    //       where: {
-    //         Senior: req.params.Senior 
-    //       }
-    //     }).then(function(dbAffordable_housing) {
-    //       res.json(data);
-    //     });
-    // });
+    app.post("/api/Affordable_housing", function(req, res) {
+     db.Affordable_housing.findAll({
+      where: {
+        // zip_code: req.body.zip_code,
+        property_type: req.body.property_type,
+        community_area_name: req.body.community_area_name 
+      }
+     }).then(function(data) {
+       res.json(data)
+    });
   });
-};
+  app.post("/api/retry", function(req, res) {
+    db.Affordable_housing.findAll({
+     where: {
+       community_area_name: req.body.community_area_name 
+     }
+    }).then(function(data) {
+      res.json(data)
+     
+   });
+ });
+});
+}
