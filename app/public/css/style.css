@@ -88,10 +88,12 @@ padding: 400px;
     padding: 0;
     background: #07617D;
 }
+
 aside{
     background: #f9a828;
     height: 100%;
 }
+
 #listingCard {
     background-color: #07617D;
     height: 250px;
@@ -113,6 +115,7 @@ aside{
   width: 60%;
     display: none;
 }
+
 #type-form{
     border: 2px solid white;
   height: 200px;
@@ -124,6 +127,7 @@ aside{
     display: none;
     margin: 0;
 }
+
 #zipcode-form{
     border: 2px solid white;
   height: 200px;
@@ -134,20 +138,22 @@ aside{
   width: 50%;
     display: none;
 }
+
+
 label{
     font-size: 12px;
 }
+
+
 .aside-title{
     color: white;
     text-align: center;
     
 }
-.neighborhood:hover{
-    color: white;
-    background: #2E383F;
-    width: 80%;
-}
+
+
 .form-check{
     margin-top: 5px;
     margin-left: 10px;
 }
+
