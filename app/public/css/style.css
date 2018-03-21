@@ -11,6 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat, repeat;
     height: 100vh;
+    position: relative;
 }
 #index{
     background: linear-gradient(
@@ -19,12 +20,16 @@
       ),
       url("../images/christopher-harris-55545-unsplash.jpg");
    
-    background-repeat: none;
+    
     background-size: cover;
     border-radius: 0;
-    height: 500px;
+    height: 830px;
     margin: 0;
     padding: 0; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #logo{
     position: absolute;
@@ -45,116 +50,134 @@
 }
 
 #index-info{
-    margin: 0;
+    margin-top: 500px;
+    text-align: center;
     color: white;
-    height: 350px;
+    height: 130px;
     border-radius: 0;
     background:linear-gradient( to bottom right,
     #f9a828, 
     #182848
       );
 }
+
+#index-bio{
+    font-size: 30px;
+}
 #submit-index{
     color: white;
     background: #07617D;
    
 }
+#index {
+    width: 100%;
+}
 
 #submit-index-div{
-    position: relative;
+   
     margin-top: 40px;
 }
 #index-label{
   color: white;
 }
+
+
+
+
+#propertyType{
+  
+    width: 40%; 
+ 
+}
+
+#neighborhood{
+
+    width: 40%; 
+
+  
+}
 /* END OF INDEX PAGE */
-#home-body{
-    background: #ECECEB;
-}
-#header-logo {
-    width: 8%;
-}
-#header{
-    height: 70px;
-    background: linear-gradient(100deg, #2E383F, #07617D);
-}
-#home-jumbotron {
-    border-radius: 0;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    background: #07617D;
-}
 
-aside{
-    background: #f9a828;
-    height: 100%;
-}
 
-#listingCard {
-    background-color: #07617D;
-    height: 250px;
-    width: 250px;
-    margin: 5px;
-}
 #results-img{
     background-color: #ECECEB;
     height: 150px;
     margin: 10px;
 }
-#neighborhood-form{
-    border: 2px solid white;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* Remember that a scrolling container element must have a position set. */
-  position: relative;
-  width: 60%;
-    display: none;
-}
 
-#type-form{
-    border: 2px solid white;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* Remember that a scrolling container element must have a position set. */
-  position: relative;
-  width: 70%;
-    display: none;
-    margin: 0;
-}
-
-#zipcode-form{
-    border: 2px solid white;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* Remember that a scrolling container element must have a position set. */
-  position: relative;
-  width: 50%;
-    display: none;
-}
 
 
 label{
     font-size: 12px;
 }
 
+                 
+#map{
+    height: 600px;
+   width: 100%;
+}
 
-.aside-title{
+#glyphicon {
     color: white;
+    font-size: 40px;
     text-align: center;
+    margin-top: 740px;
+    position: absolute;
+}
+
+#results-list {
+    background-color: #07617D;
+    height: 250px;
+    color: white;
+    padding-left: 25px;
+}
+
+#results-list:hover {
+    background-color: rgb(8, 46, 58);
+    color: #f9a828;
+    border: white;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.api-img {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    width: 225px;
+    height: 175px;
+}
+
+#property-address{
+    font-size: 15px;
+
+}
+
+#map-index{
+    background: linear-gradient(
+        rgba(44, 43, 43, 0.75), 
+        rgba(44, 43, 43, 0.75)
+      ),
+      url("../images/christopher-harris-55545-unsplash.jpg");
+   
     
+    background-size: cover;
+    border-radius: 0;
+    height: 230px;
+    margin: 0;
+    padding: 0; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
-
-.form-check{
-    margin-top: 5px;
-    margin-left: 10px;
+#map-logo{
+    margin-top: 45px;
+    width: 20%;
 }
 
-
-    height: 480px;
-    width: 640px;
+.form-group{
+    margin: 0;
 }
