@@ -24,11 +24,18 @@
     <body>
         <div id="map"></div>
 
+        <div id="map-index">
+         
+                    <img onclick="window.location.href='/index.html'" src="images/homey_logo.png" id="map-logo" alt="">
+   
+                
+        </div>
+
         <script>
         
                 function initMap() {
                     var options = {
-                        zoom:7,
+                        zoom:10,
                         center: {lat: 41.8781, lng: -87.6298}
                     }
                     var map = new google.maps.Map(document.getElementById('map'),options);

@@ -26,111 +26,105 @@
                     </div>
 
 
-                    <p>
-                        Homey is a Real Estate ..., giving
-                        <i>budget friendly
-                            <i> blah blah blah
-                    </p>
+                 
 
 
                     <div class="col-md-12 col-lg-12" id="index-info">
-                        <!-- <div id="dropdown-menus"> -->
+                        <p id="index-bio">
+                            Homey is a <b>friendly</b> home finder for <i>affordable</i> Chicago housing.            
+                        </p>
+                            <form class="form-inline" action="" method="POST">
+                                <div class="form-group">
+                                        <label id="index-label"  for="neighborhood">Neighborhood</label>
+                                        <select class="form-control"  id="neighborhood" required>
+                                                <option name="null"></option>
+                                                <option value="Albany Park">Albany Park</option>
+                                                <option value="Ashburn">Ashburn</option>
+                                                <option value="Auburn Gresham">Auburn Gresham</option>
+                                                <option value="Austin">Austin</option>
+                                                <option value="Avalon Park">Avalon Park</option>
+                                                <option value="Belmont Cragin">Belmont Cragin</option>
+                                                <option value="Bridgeport">Bridgeport</option>
+                                                <option value="Chatham">Chatham</option>
+                                                <option value="Chicago Lawn">Chicago Lawn</option>
+                                                <option value="Douglas">Douglas</option>
+                                                <option value="Dunning">Dunning</option>
+                                                <option value="East Garfield Park">East Garfield Park</option>
+                                                <option value="Edgewater">Edgewater</option>
+                                                <option value="Englewood">Englewood</option>
+                                                <option value="Fuller Park">Fuller Park</option>
+                                                <option value="Gage Park">Gage Park</option>
+                                                <option value="Garfield Park">Garfield Park</option>
+                                                <option value="Grand Boulevard">Grand Boulevard</option>
+                                                <option value="Greater Grand Crossing">Greater Grand Crossing</option>
+                                                <option value="Hegewisch">Hegewisch</option>
+                                                <option value="Humboldt Park">Humboldt Park</option>
+                                                <option value="Hyde Park">Hyde Park</option>
+                                                <option value="Jefferson Park">Jefferson Park</option>
+                                                <option value="Kenwood">Kenwood</option>
+                                                <option value="Lakeview">Lakeview</option>
+                                                <option value="Logan Square">Logan Square</option>
+                                                <option value="Loop">Loop</option>
+                                                <option value="Lower West Side">Lower West Side</option>
+                                                <option value="Montclare">Montclare</option>
+                                                <option value="Near North Side">Near North Side</option>
+                                                <option value="Near West Side">Near West Side</option>
+                                                <option value="New City">New City</option>
+                                                <option value="North Center">North Center</option>
+                                                <option value="Noth Lawndale">Noth Lawndale</option>
+                                                <option value="North Park">North Park</option>
+                                                <option value="Norwood Park">Norwood Park</option>
+                                                <option value="Oakland">Oakland</option>
+                                                <option value="Pullman">Pullman</option>
+                                                <option value="Riverdale">Riverdale</option>
+                                                <option value="Rogers Park">Rogers Park</option>
+                                                <option value="Roseland">Roseland</option>
+                                                <option value="South Chicago">South Chicago</option>
+                                                <option value="South Lawndale">South Lawndale</option>
+                                                <option value="South Shore">South Shore</option>
+                                                <option value="Uptown">Uptown</option>
+                                                <option value="Washington Heights">Washington Heights</option>
+                                                <option value="Washington Park">Washington Park</option>
+                                                <option value="West Englewood">West Englewood</option>
+                                                <option value="West Garfield Park">West Garfield Park</option>
+                                                <option value="West Lawn">West Lawn</option>
+                                                <option value="West Pullman">West Pullman</option>
+                                                <option value="West Ridge">West Ridge</option>
+                                                <option value="West Town">West Town</option>
+                                                <option value="Woodlawn">Woodlawn</option>
+                                            </select>
+            
 
-                        <form id="form"  name="indexform" action="" method="POST">
-
-                                <label id="index-label" class="col-md-6" for="neighborhood">Neighborhood</label>
-                                <select class="form-control" class="col-md-6" id="neighborhood" required>
-                                    <option name="null"></option>
-                                    <option value="Albany Park">Albany Park</option>
-                                    <option value="Ashburn">Ashburn</option>
-                                    <option value="Auburn Gresham">Auburn Gresham</option>
-                                    <option value="Austin">Austin</option>
-                                    <option value="Avalon Park">Avalon Park</option>
-                                    <option value="Belmont Cragin">Belmont Cragin</option>
-                                    <option value="Bridgeport">Bridgeport</option>
-                                    <option value="Chatham">Chatham</option>
-                                    <option value="Chicago Lawn">Chicago Lawn</option>
-                                    <option value="Douglas">Douglas</option>
-                                    <option value="Dunning">Dunning</option>
-                                    <option value="East Garfield Park">East Garfield Park</option>
-                                    <option value="Edgewater">Edgewater</option>
-                                    <option value="Englewood">Englewood</option>
-                                    <option value="Fuller Park">Fuller Park</option>
-                                    <option value="Gage Park">Gage Park</option>
-                                    <option value="Garfield Park">Garfield Park</option>
-                                    <option value="Grand Boulevard">Grand Boulevard</option>
-                                    <option value="Greater Grand Crossing">Greater Grand Crossing</option>
-                                    <option value="Hegewisch">Hegewisch</option>
-                                    <option value="Humboldt Park">Humboldt Park</option>
-                                    <option value="Hyde Park">Hyde Park</option>
-                                    <option value="Jefferson Park">Jefferson Park</option>
-                                    <option value="Kenwood">Kenwood</option>
-                                    <option value="Lakeview">Lakeview</option>
-                                    <option value="Logan Square">Logan Square</option>
-                                    <option value="Loop">Loop</option>
-                                    <option value="Lower West Side">Lower West Side</option>
-                                    <option value="Montclare">Montclare</option>
-                                    <option value="Near North Side">Near North Side</option>
-                                    <option value="Near West Side">Near West Side</option>
-                                    <option value="New City">New City</option>
-                                    <option value="North Center">North Center</option>
-                                    <option value="Noth Lawndale">Noth Lawndale</option>
-                                    <option value="North Park">North Park</option>
-                                    <option value="Norwood Park">Norwood Park</option>
-                                    <option value="Oakland">Oakland</option>
-                                    <option value="Pullman">Pullman</option>
-                                    <option value="Riverdale">Riverdale</option>
-                                    <option value="Rogers Park">Rogers Park</option>
-                                    <option value="Roseland">Roseland</option>
-                                    <option value="South Chicago">South Chicago</option>
-                                    <option value="South Lawndale">South Lawndale</option>
-                                    <option value="South Shore">South Shore</option>
-                                    <option value="Uptown">Uptown</option>
-                                    <option value="Washington Heights">Washington Heights</option>
-                                    <option value="Washington Park">Washington Park</option>
-                                    <option value="West Englewood">West Englewood</option>
-                                    <option value="West Garfield Park">West Garfield Park</option>
-                                    <option value="West Lawn">West Lawn</option>
-                                    <option value="West Pullman">West Pullman</option>
-                                    <option value="West Ridge">West Ridge</option>
-                                    <option value="West Town">West Town</option>
-                                    <option value="Woodlawn">Woodlawn</option>
-                                </select>
-
-
-
-                                <label id="index-label" class="col-md-6" for="propertyType">Property Type</label>
-                                <select class="form-control" class="col-md-6" id="propertyType">
-                                    <option name="null"></option>
-                                    <option value="ARO">ARO</option>
-                                    <option value="Artist Housing">Artist Housing</option>
-                                    <option value="Artist Live/Work Space">Artist Live/Work Space</option>
-                                    <option value="Inter Generational">Inter Generational</option>
-                                    <option value="Multifamily">Multifamily</option>
-                                    <option value="Multifamily/Artists">Multifamily/Artists</option>
-                                    <option value="People with Disabilities">People with Disabilities</option>
-                                    <option value="Senior">Senior</option>
-                                    <option value="Senior HUD 202">Senior HUD 202</option>
-                                    <option value="Senior LGBTQ">Senior LGBTQ</option>
-                                    <option value="Seniors">Seniors</option>
-                                    <option value="Supportive">Supportive</option>
-                                    <option value="Supportive Housing">Supportive Housing</option>
-                                    <option value="Supportive/HIV/AIDS">Supportive/HIV/AIDS</option>
-                                    <option value="Supportive/Kinship Families">Supportive/Kinship Families</option>
-                                    <option value="Supportive/Males 18-24 yrs">Supportive/Males 18-24 yrs</option>
-                                    <option value="Supportive/Teenage Moms">Supportive/Teenage Moms</option>
-                                    <option value="Supportive/Veterans">Supportive/Veterans</option>
-                                    <option value="Supportive/Youth/Kinship Families">Supportive/Youth/Kinship Families</option>
-                                </select>
-
-    <!-- 
-                                <div id="submit-index-div"> -->
-                                
-                                    <button id="submit-index" value="submit">Submit</button>
-                            
-                        </form>
-
-                        <!-- </div> -->
+                                </div>
+                                <div class="form-group">
+                                        <label id="index-label"  for="propertyType">Property Type</label>
+                                        <select class="form-control"  id="propertyType">
+                                                <option name="null"></option>
+                                                <option value="ARO">ARO</option>
+                                                <option value="Artist Housing">Artist Housing</option>
+                                                <option value="Artist Live/Work Space">Artist Live/Work Space</option>
+                                                <option value="Inter Generational">Inter Generational</option>
+                                                <option value="Multifamily">Multifamily</option>
+                                                <option value="Multifamily/Artists">Multifamily/Artists</option>
+                                                <option value="People with Disabilities">People with Disabilities</option>
+                                                <option value="Senior">Senior</option>
+                                                <option value="Senior HUD 202">Senior HUD 202</option>
+                                                <option value="Senior LGBTQ">Senior LGBTQ</option>
+                                                <option value="Seniors">Seniors</option>
+                                                <option value="Supportive">Supportive</option>
+                                                <option value="Supportive Housing">Supportive Housing</option>
+                                                <option value="Supportive/HIV/AIDS">Supportive/HIV/AIDS</option>
+                                                <option value="Supportive/Kinship Families">Supportive/Kinship Families</option>
+                                                <option value="Supportive/Males 18-24 yrs">Supportive/Males 18-24 yrs</option>
+                                                <option value="Supportive/Teenage Moms">Supportive/Teenage Moms</option>
+                                                <option value="Supportive/Veterans">Supportive/Veterans</option>
+                                                <option value="Supportive/Youth/Kinship Families">Supportive/Youth/Kinship Families</option>
+                                            </select>
+                                </div>
+                                <div class="form-group">
+                                        <button id="submit-index" value="submit">Submit</button>
+                                </div>
+                            </form>
 
                     </div>
 
@@ -146,97 +140,17 @@
 
         <div class="row">
             <div class="col-md-12 col-lg-12">
-                <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Map</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                        <div id="map"></div>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-            </div>
-        </div>
-            
-
+ 
                 <div  id= "results" >
-                    <div id="results-list" class="col-md-4 col-lg-4">
-                        <img src="" alt="">
-                <h3 id="community-area"> Community Area</h3>
-                <h4 id="property-name"> Property Name</h4>
-                <p id="property-address"> Proerty Address</p>
-                <p id="property-type"> Prprty Type</p>
-                <button id="map-button" onclick="window.location.href='/home.html'">Map</button>
-                </div>
+
                 </div> 
             </div>
         </div>
 
-
-
-    
-
-
-        <!-- <script>
-        
-        function initMap() {
-            var options = {
-                zoom:7,
-                center: {lat: 41.8781, lng: -87.6298}
-            }
-            var map = new google.maps.Map(document.getElementById('map'),options);
-            
-            localData = JSON.parse(localStorage.getItem("dataArr"));
-            console.log("this is", localData)
-            for(i = 0; i < localData.length; i++ ){
-                var position = {
-                    lat: parseFloat(localData[i].latitude),
-                    lng: parseFloat(localData[i].longitude)
-                }
-                console.log("this is position: ", position)
-                
-                var marker = new google.maps.Marker ({
-                    position: position,
-                    map:map
-                })
-                
-                var content = '<div class="info-window">' 
-                + '<h4>' + localData[i].community_area_name + '<h4>'
-                + '<h4>' + localData[i].property_type + '<h4>'
-                + '<h4>' + localData[i].property_name+ '<h4>'
-                + '<h4>' + localData[i].address+ '<h4>'   
-                    
-                
-                var infoWindow = new google.maps.InfoWindow({})
-                google.maps.event.addListener(marker,"click", (function(marker,content){ 
-                    return function() {
-                    infoWindow.setContent(content);
-                    infoWindow.open(map,marker);
-                    };
-                })(marker,content)); 
-            };
-        }
-
-
-        </script>
-
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKIfEQokQ6CbqW6EHa3bhO8cCew8w9U4Y&callback=initMap"></script> -->
-    
-
+   <script>
+         $("#submit-index").on("click", function () {
+   $("body").scrollspy({target: "#results"});
+         });
+   </script>
     </body>
 </html>

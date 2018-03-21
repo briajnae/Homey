@@ -11,6 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat, repeat;
     height: 100vh;
+    position: relative;
 }
 #index{
     background: linear-gradient(
@@ -49,7 +50,8 @@
 }
 
 #index-info{
-    margin-top: 20%;
+    margin-top: 500px;
+    text-align: center;
     color: white;
     height: 130px;
     border-radius: 0;
@@ -57,6 +59,10 @@
     #f9a828, 
     #182848
       );
+}
+
+#index-bio{
+    font-size: 30px;
 }
 #submit-index{
     color: white;
@@ -75,84 +81,29 @@
   color: white;
 }
 
-#form {
-    display: inline;
-   
- 
-}
-#dropdown-menus{
-    margin-left: 20px;
-    padding: 30px;
-}
+
+
 
 #propertyType{
-    width: 20%; 
-   position: absolute;
+  
+    width: 40%; 
+ 
 }
 
 #neighborhood{
-    width: 20%; 
-    position: relative;
+
+    width: 40%; 
+
   
 }
 /* END OF INDEX PAGE */
-#home-body{
-    background: #ECECEB;
-}
-#header-logo {
-    width: 8%;
-}
-#header{
-    height: 70px;
-    background: linear-gradient(100deg, #2E383F, #07617D);
-}
-#home-jumbotron {
-    border-radius: 0;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    background: #07617D;
-}
 
-aside{
-    background: #f9a828;
-    height: 100%;
-}
 
-#listingCard {
-    background-color: #07617D;
-    height: 250px;
-    width: 250px;
-    margin: 5px;
-}
 #results-img{
     background-color: #ECECEB;
     height: 150px;
     margin: 10px;
 }
-#neighborhood-form{
-    border: 2px solid white;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* Remember that a scrolling container element must have a position set. */
-  position: relative;
-  width: 60%;
-    display: none;
-}
-
-#type-form{
-    border: 2px solid white;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  /* Remember that a scrolling container element must have a position set. */
-  position: relative;
-  width: 70%;
-    display: none;
-    margin: 0;
-}
-
 
 
 
@@ -160,37 +111,18 @@ label{
     font-size: 12px;
 }
 
-
-.aside-title{
-    color: white;
-    text-align: center;
-    
-}
-
-
-.form-check{
-    margin-top: 5px;
-    margin-left: 10px;
-}
-
                  
 #map{
-    height: 825px;
+    height: 600px;
    width: 100%;
-}
-
-#results{
-    background-color: antiquewhite;
-    height: 415px;
-   width: 100%;
-  
 }
 
 #glyphicon {
     color: white;
     font-size: 40px;
     text-align: center;
-    margin-top: 270px;
+    margin-top: 740px;
+    position: absolute;
 }
 
 #results-list {
@@ -219,4 +151,33 @@ label{
 #property-address{
     font-size: 15px;
 
+}
+
+#map-index{
+    background: linear-gradient(
+        rgba(44, 43, 43, 0.75), 
+        rgba(44, 43, 43, 0.75)
+      ),
+      url("../images/christopher-harris-55545-unsplash.jpg");
+   
+    
+    background-size: cover;
+    border-radius: 0;
+    height: 230px;
+    margin: 0;
+    padding: 0; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#map-logo{
+    margin-top: 45px;
+    width: 20%;
+}
+
+.form-group{
+    margin: 0;
 }

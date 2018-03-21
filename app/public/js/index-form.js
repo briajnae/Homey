@@ -44,7 +44,7 @@ $(document).ready(function () {
         // localStorage.setItem("dataArr", JSON.stringify(data));
         // window.location.href="/index.html";
         for (i = 0; i < data.length; i++) {
-          $("#results").append("<div id=results-list class=col-md-4 col-lg-4>" + "<img class=api-img src='" + queryURL + "'> " + "</img>" + "<h3>" + data[i].community_area_name + "</h3>" + "<h4>" + data[i].property_name + "</h4>" + "<p>" + data[i].address + "<p>" + "<p>" + data[i].property_type + "<p>" + "</div>");
+          $("#results").append("<div id=results-list class=col-md-4 col-lg-4>" + "<img class=api-img src='" + queryURL + "'> " + "</img>" + "<h3>" + data[i].community_area_name + "</h3>" + "<h4>" + data[i].property_name + "</h4>" + "<p>" + data[i].address + "<p>" + "<p>" + data[i].property_type + "<p>"+ "<button id=map-button onclick=window.location.href='/home.html'>" + "View Map" + "</button>" + "</div>");
          
 
           var location = data[i].location;
