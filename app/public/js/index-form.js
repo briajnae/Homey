@@ -7,6 +7,9 @@ $(document).ready(function () {
       property_type: $("#propertyType").val(),
       community_area_name: $("#neighborhood").val()
     }
+
+   
+
     $.post("/api/Affordable_housing", data_object, function () {
       console.log("inside the post", data_object)
     }).then(function (data) {
@@ -16,8 +19,16 @@ $(document).ready(function () {
       else {
         for (i = 0; i < data.length; i++) {
           
-          $("#results").append("<div id=results-list class=col-md-4 col-lg-4>" + "<img src='" + queryURL + "'> " + "</img>" + "<h3>" + data[i].community_area_name + "</h3>" + "<h4>" + data[i].property_name + "</h4>" + "<p>" + data[i].address + "<p>" + "<p>" + data[i].property_type + "<p>" + "<button id=map-button onclick=window.location.href='/home.html'>" + "View Map" + "</button>" + "</div>");  
+          $("#results").append("<div id=results-list class=col-md-4 col-lg-4>" + "<img class=api-img  src='" + queryURL + "'> " + "</img>" + "<h3 id=area-name>" + data[i].community_area_name + "</h3>" + "<h4 id=property-name>" + data[i].property_name + "</h4>" + "<p id=property-info>" + data[i].address + "<p>" + "<p id=property-info>" + data[i].property_type + "<p>"+ "<button id=map-button onclick=window.location.href='/home.html'>" + "View Map" + "</button>" + "<button class='remove'>Remove</button>"  + "</div>");
+         
+         
+          $(".remove").click(function(){
+            $(this).closest("div").remove();
+           });
           updateMap();
+
+    
+         
 
           var location = data[i].location;
           var use = location.substr(1).slice(0, -1);;
@@ -30,12 +41,20 @@ $(document).ready(function () {
       }
     });
 
+   
     const retry = function (data_object) {
       $.post("/api/retry/", data_object, function () {
       }).then(function (data) {
         for (i = 0; i < data.length; i++) {
-          $("#results").append("<div id=results-list class=col-md-4 col-lg-4>" + "<img class=api-img src='" + queryURL + "'> " + "</img>" + "<h3>" + data[i].community_area_name + "</h3>" + "<h4>" + data[i].property_name + "</h4>" + "<p>" + data[i].address + "<p>" + "<p>" + data[i].property_type + "<p>"+ "<button id=map-button onclick=window.location.href='/home.html'>" + "View Map" + "</button>" + "</div>");
+
+          $("#results").append("<div id=results-list class=col-md-4 col-lg-4>" + "<img class=api-img  src='" + queryURL + "'> " + "</img>" + "<h3 id=area-name>" + data[i].community_area_name + "</h3>" + "<h4 id=property-name>" + data[i].property_name + "</h4>" + "<p id=property-info>" + data[i].address + "<p>" + "<p id=property-info>" + data[i].property_type + "<p>"+ "<button id=map-button onclick=window.location.href='/home.html'>" + "View Map" + "</button>" + "<button class='remove'>Remove</button>"  +"</div>");
          
+        
+          $(".remove").click(function(){
+           $(this).closest("div").remove();
+          });
+         
+
           var location = data[i].location;
           var use = location.substr(1).slice(0, -1);
           var yes = use.split(" ").join("");

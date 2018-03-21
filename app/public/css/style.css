@@ -138,6 +138,7 @@ label{
     border: white;
     border-width: 2px;
     border-style: solid;
+    
 }
 
 .api-img {
@@ -180,4 +181,35 @@ label{
 
 .form-group{
     margin: 0;
+}
+
+#area-name{
+font-family: 'Anton';
+text-transform: uppercase;
+font-size: 25px;
+}
+
+#property-name{
+    font-family: 'Oswald';
+}
+
+#property-info{
+    font-family: 'Playfair Display';
+}
+
+#map-button{
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    text-transform: uppercase;
+}
+
+.remove {
+    background: transparent;
+    font-family: "Oswald";
+    text-transform: uppercase;
+    border: none;
+    margin-top: 5px;
+   
 }

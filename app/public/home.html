@@ -60,10 +60,19 @@
                         })
                         
                         var content = '<div class="info-window">' 
-                        + '<h4>' + localData[i].community_area_name + '<h4>'
-                        + '<h4>' + localData[i].property_type + '<h4>'
-                        + '<h4>' + localData[i].property_name+ '<h4>'
-                        + '<h4>' + localData[i].address+ '<h4>'   
+                        + '<h1>' + "Property Information"+ '<h1>'
+                        + '<h2>' + localData[i].community_area_name + '<h2>'
+                        + '<h3>' + localData[i].property_name+ '<h3>'
+                        + '<h4>' + localData[i].address+ ", " + localData[i].zip_code + '<h4>'
+
+                        + '<h5>' + "Property Type: " + localData[i].property_type + '<h5>'
+                        
+                        
+                     
+                        + '<h1>' + "Contact Property Management" + '<h1>'
+                        + '<h3>' + "Company Name:" + localData[i].management_company+ '<h3>'
+                        + '<h4>' + "Phone: " + localData[i].phone_number+ '<h4>'
+
             /** 
             * function to create a new infoWindow for each marker
             * function to set the content to each infoWindow
