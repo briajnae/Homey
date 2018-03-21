@@ -38,28 +38,29 @@
                         center: {lat: 41.8781, lng: -87.6298}
                     }
                     var map = new google.maps.Map(document.getElementById('map'),options);
-            /** 
+            /* 
             * Fetches data from local storage and sets it to a variable
-            **/
+            */
                     localData = JSON.parse(localStorage.getItem("dataArr"));
-            /** 
+            /* 
             * For loop to find lat and long and places both in an object
-            **/        
+            */        
                     for(i = 0; i < localData.length; i++ ){
                         var position = {
                             lat: parseFloat(localData[i].latitude),
                             lng: parseFloat(localData[i].longitude)
                         }
                         
-            /** 
+            /* 
             * Creates the markers on the map
-            **/             
+            */             
                         var marker = new google.maps.Marker ({
                             position: position,
                             map:map
                         })
                         
                         var content = '<div class="info-window">' 
+
                         + '<h1>' + "Property Information"+ '<h1>'
                         + '<h2>' + localData[i].community_area_name + '<h2>'
                         + '<h3>' + localData[i].property_name+ '<h3>'
@@ -73,10 +74,10 @@
                         + '<h3>' + "Company Name:" + localData[i].management_company+ '<h3>'
                         + '<h4>' + "Phone: " + localData[i].phone_number+ '<h4>'
 
-            /** 
+
             * function to create a new infoWindow for each marker
             * function to set the content to each infoWindow
-            **/                  
+            */                  
                         
                         var infoWindow = new google.maps.InfoWindow({})
                         google.maps.event.addListener(marker,"click", (function(marker,content){ 
