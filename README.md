@@ -1,5 +1,6 @@
 #Homey
 ![Homey Logo](/images/homey_logo.png)
+- homey-app-bjs.herokuapp.com
 
 ##Introdution
 Homey is a user-friendly web application to help Chicagoans find affordable rental housing developments within the city. 
@@ -39,6 +40,4 @@ Homey is a user-friendly web application to help Chicagoans find affordable rent
 - Bria Walker - https://github.com/briajnae
 - Jenna Conway - https://github.com/jennaconway
 
-*Hat tip to Sabah & Leah
-*** why the fuck isnt this git push working test test test test
 
