@@ -1,12 +1,11 @@
 #Homey
-//LOGO
 ![Homey Logo](/images/homey_logo.png)
+- homey-app-bjs.herokuapp.com
 
 ##Introdution
 Homey is a user-friendly web application to help Chicagoans find affordable rental housing developments within the city. 
 
 ##Wireframe
-//wireframe jpg
 ![Homey Wireframe]
 
 ##Features
@@ -14,7 +13,6 @@ Homey is a user-friendly web application to help Chicagoans find affordable rent
 - Results are displayed on a map using the Google Maps api.
 
 ##Usage
-//who will use this website
 - Homey was built with the intention to make affordable rental housing easier to find and offer contact information for those developments. 
 
 ##Demo
@@ -24,7 +22,7 @@ Homey is a user-friendly web application to help Chicagoans find affordable rent
 - Technologies
     - HTML, CSS, Bootstramp
     - Javascript, jQuery
-    - Express, 
+    - Express
 - API
     - National League of Cities
     - [data.nlc.org](https://data.nlc.org/Housing/Affordable-Rental-Housing-Developments-Chicago-IL-/ctfj-kkpc)
@@ -41,7 +39,5 @@ Homey is a user-friendly web application to help Chicagoans find affordable rent
 - Samidh Desai - https://github.com/SamDesai333
 - Bria Walker - https://github.com/briajnae
 - Jenna Conway - https://github.com/jennaconway
-
-*Hat tip to Sabah & Leah
 
 
